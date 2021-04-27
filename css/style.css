@@ -65,4 +65,44 @@ h1 {
   width: 60%;
 }
 
+section {
+  padding: 5em 10em;
+  text-align: center;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+section h2 {
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.catalog {
+  background-color: #f0f0f0;
+}
+.catalog .colona {
+  float: left;
+  width: 25%;
+}
+.catalog .colona img {
+  width: 90%;
+}
+
+.buttons {
+  background-color: #ff3720;
+  padding: 0.5em 2em;
+  margin-top: 1em;
+  display: inline-block;
+  color: #ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.buttons:hover {
+  background-color: #000;
+}
+
 /*# sourceMappingURL=style.css.map */
