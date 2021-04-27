@@ -6,14 +6,63 @@
   color: #797979;
 }
 
-header {
+main {
+  padding: 2em 15em;
   background-image: url(../slike/background.jpg);
-  height: 50em;
+  background-size: cover;
+  height: 100vh;
+}
+main header {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
+main header:before, main header:after {
+  content: "";
+  display: table;
+}
+main header:after {
+  clear: both;
 }
 
-.navBar {
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  float: left;
+}
+.logo span {
+  color: #e42b15;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
   display: inline;
-  background: white;
+  margin-left: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  line-height: 3em;
+}
+nav ul li a:hover {
+  color: #000;
+}
+
+h1, h3 {
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+h1 {
+  margin: 20% auto 0;
+  font-size: 2.5em;
+  border-bottom: 2px solid #ff3720;
+  width: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

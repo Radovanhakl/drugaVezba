@@ -3,13 +3,54 @@
 
 @include main;
 
-header{
+
+main{
+    padding: 2em 15em;
     background-image: url(../slike/background.jpg);
-    height: 50em;
-    
+    background-size: cover;
+    height: 100vh;
+    header{
+            background-color: #fff;
+            padding: 0.5em 1em;
+            @include clearfix;
+    }
 }
 
-.navBar{
-    display: inline;
-    background:white;
+
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: $logo_font;
+    float: left;
+    span{ color: $red_dark;}
+}
+
+nav{
+    float: right;
+    ul{
+        list-style: none;
+        li{
+            display: inline;
+            margin-left: 1em;
+            a{
+                text-decoration: none;
+                line-height: 3em;
+                &:hover {color: #000;}
+
+            }
+        }
+    }
+}
+h1, h3{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+h1{
+    
+    margin: 20% auto 0;
+    font-size: 2.5em;
+    border-bottom: 2px solid $main_red;
+    width: 60%;
+
 }
