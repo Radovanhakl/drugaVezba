@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+header{
+    background-image: url(../slike/background.jpg);
+    height: 50em;
+    
+}
+
+.navBar{
+    display: inline;
+    background:white;
+}
