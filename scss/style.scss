@@ -23,6 +23,7 @@ main{
     font-family: $logo_font;
     float: left;
     span{ color: $red_dark;}
+    
 }
 
 nav{
@@ -108,3 +109,23 @@ table{
     }
 }
 
+footer{
+    padding: 5em 10em;
+    background-color: #000;
+    @include clearfix;
+    text-align: left;
+    .logo{
+        float: none;
+        font-size: 1.5em;
+        border-bottom: 1px solid $main_red;
+    }
+    address{
+        float: left;
+        margin: 1em;
+    }
+    
+    .map{
+        float: right;
+        margin: 1em;
+    }
+}

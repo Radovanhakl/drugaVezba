@@ -129,4 +129,30 @@ table tbody td:first-child {
   background-color: #f0f0f0;
 }
 
+footer {
+  padding: 5em 10em;
+  background-color: #000;
+  text-align: left;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+footer .logo {
+  float: none;
+  font-size: 1.5em;
+  border-bottom: 1px solid #ff3720;
+}
+footer address {
+  float: left;
+  margin: 1em;
+}
+footer .map {
+  float: right;
+  margin: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
